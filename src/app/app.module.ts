@@ -3,18 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FirstComponent } from './Components/first/first.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
-import { FormcomponentsComponent } from './formcomponents/formcomponents.component';
 import { FooterComponent } from './Components/footer/footer.component';
+import { GameControlComponent } from './Components/game-control/game-control.component';
+import { OddComponent } from './Components/odd/odd.component';
+import { EvenComponent } from './Components/even/even.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponent,
     NavbarComponent,
-    FormcomponentsComponent,
-    FooterComponent
+    FooterComponent,
+    GameControlComponent,
+    OddComponent,
+    EvenComponent,
   ],
   imports: [
     BrowserModule,

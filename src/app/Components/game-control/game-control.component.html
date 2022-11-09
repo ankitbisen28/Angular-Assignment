@@ -1,0 +1,12 @@
+<div class="container">
+  <h2 class="text-center">Game Control</h2>
+  <div class="container d-flex justify-content-center">
+    <div class="btn btn-primary mx-3" (click)="startInterval()">Start</div>
+    <div class="btn btn-danger" (click)="stopInterval()">Stop</div>
+  </div>
+  <p class="text-center my-3 fs-5 fw-bold" id="counter">{{num}}</p>
+  <div class="container d-flex justify-content-around">
+    <app-even [value]="evenvalue"></app-even>
+    <app-odd [value]="oddvalue"></app-odd>
+</div>
+</div>
