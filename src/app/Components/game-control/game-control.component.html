@@ -1,12 +1,29 @@
-<div class="container">
-  <h2 class="text-center">Game Control</h2>
-  <div class="container d-flex justify-content-center">
-    <div class="btn btn-primary mx-3" (click)="startInterval()">Start</div>
-    <div class="btn btn-danger" (click)="stopInterval()">Stop</div>
-  </div>
-  <p class="text-center my-3 fs-5 fw-bold" id="counter">{{num}}</p>
-  <div class="container d-flex justify-content-around">
-    <app-even [value]="evenvalue"></app-even>
-    <app-odd [value]="oddvalue"></app-odd>
-</div>
-</div>
+<mat-card>
+  <div class="mat-display-1" align="center">Game Control</div>
+  <mat-grid-list cols="2" rowHeight="5:1">
+    <mat-grid-tile>
+      <button mat-raised-button color="primary" (click)="startInterval()">
+        Start
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <button
+        mat-raised-button
+        color="warn"
+        class="mx-3"
+        (click)="stopInterval()"
+      >
+        Stop
+      </button>
+    </mat-grid-tile>
+  </mat-grid-list>
+  <p style="text-align: center;" id="counter">{{ num }}</p>
+  <mat-grid-list cols="2" rowHeight="5:1">
+    <mat-grid-tile>
+      <app-even [value]="evenvalue"></app-even>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <app-odd [value]="oddvalue"></app-odd>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-card>

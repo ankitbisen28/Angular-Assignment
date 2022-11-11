@@ -9,7 +9,7 @@ export class GameControlComponent implements OnInit {
   constructor() {}
 
   num = 0;
-  start = 0;
+  start:any;
   evenvalue = 0;
   oddvalue = 0;
   i = 0;

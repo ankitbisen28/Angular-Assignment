@@ -8,6 +8,8 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { GameControlComponent } from './Components/game-control/game-control.component';
 import { OddComponent } from './Components/odd/odd.component';
 import { EvenComponent } from './Components/even/even.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { EvenComponent } from './Components/even/even.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
