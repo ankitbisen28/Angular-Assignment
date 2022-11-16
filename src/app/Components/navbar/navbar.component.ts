@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { NavbarserviceService } from 'src/app/navbarservice.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  // @Input() public isUserLoggedIn: boolean = false ;
+
+  constructor( public nav: NavbarserviceService) { }
+  onClickEventCLicked(value: {userLogin: true}){
+    console.log(value)
+  }
 
   ngOnInit(): void {
   }

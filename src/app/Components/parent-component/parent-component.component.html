@@ -1,0 +1,31 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile
+    ><mat-card>
+      <div class="mat-display-1">Parent Component</div>
+      <div class="input-group input-group-lg">
+        <span class="mat-title">Parent value</span>
+        <mat-form-field class="example-full-width" floatLabel="always" appearance="outline">
+          <mat-label>Type Something</mat-label>
+          <input #parentval matInput>
+        </mat-form-field>
+        <button
+          mat-raised-button
+          (click)="getvalue(parentval.value)"
+          color="primary"
+        >
+          To Child
+        </button>
+      </div>
+      <p class="mat-subheading-2" [style]="">Result</p>
+      <p id="parent-result">
+        {{ childValue }}
+      </p>
+    </mat-card>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <app-child-component
+      [value]="parentValue"
+      (newItemEvent)="addItem($event)"
+    ></app-child-component>
+  </mat-grid-tile>
+</mat-grid-list>

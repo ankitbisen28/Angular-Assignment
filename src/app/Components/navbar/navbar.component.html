@@ -1,15 +1,11 @@
 <p>
-  <mat-toolbar color="primary">
-   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <span>My App</span>
-  <span class="example-spacer"></span>
-  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-    <mat-icon>favorite</mat-icon>
-  </button>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-   <mat-icon>share</mat-icon>
- </button>
+  <mat-toolbar color="warn" class="navbar">
+  <span [routerLink]="['/']">MyProjects</span>
+  <div *ngIf="nav.visible">
+    <span [routerLink]="['/home']" class="mat-body-strong">Home</span>
+    <span [routerLink]="['2inputbox']" class="mat-body-strong">Assigment 1</span>
+    <span [routerLink]="['gamecontrol']" class="mat-body-strong">Assigment 2</span>
+    <span [routerLink]="['/']" class="mat-body-strong">Logout</span>
+  </div>
 </mat-toolbar>
 </p>
