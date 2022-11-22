@@ -1,10 +1,11 @@
 <p>
-  <mat-toolbar color="warn" class="navbar">
+  <mat-toolbar color="primary" class="navbar">
   <span [routerLink]="['/']">MyProjects</span>
   <div *ngIf="nav.visible">
     <span [routerLink]="['/home']" class="mat-body-strong">Home</span>
     <span [routerLink]="['2inputbox']" class="mat-body-strong">Assigment 1</span>
     <span [routerLink]="['gamecontrol']" class="mat-body-strong">Assigment 2</span>
+    <span [routerLink]="['TodoApp']" class="mat-body-strong">Assigment 4</span>
     <span [routerLink]="['/']" class="mat-body-strong">Logout</span>
   </div>
 </mat-toolbar>

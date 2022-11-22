@@ -1,0 +1,23 @@
+<div class="container">
+    <h2 class=".mat-h2">Todo App</h2>
+    <form (ngSubmit)="onSubmit()">
+      <div class="input-box">
+        <mat-form-field class="example-full-width">
+          <mat-label>Title</mat-label>
+          <input type="text" matInput name="title" id="title" [(ngModel)]="title" />
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label>Description</mat-label>
+          <input matInput name="desc" id="desc" [(ngModel)]="desc" />
+        </mat-form-field>
+      </div>
+      <button
+        class="addbtn"
+        mat-raised-button
+        color="primary"
+        type="submit"
+      >
+        Add
+      </button>
+    </form>
+  </div>

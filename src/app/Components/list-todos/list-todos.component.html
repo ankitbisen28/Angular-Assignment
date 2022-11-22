@@ -1,0 +1,36 @@
+<div class="container">
+  <mat-card>
+    <mat-card-title [ngClass]="{ strike: !todo.active }">{{
+      todo.title
+    }}</mat-card-title>
+    <mat-card-subtitle [ngClass]="{ strike: !todo.active }">{{
+      todo.desc
+    }}</mat-card-subtitle>
+
+    <div class="input-box">
+      <input
+        type="checkbox"
+        class="form-check-input"
+        id="todo{{ i }}"
+        (click)="onCheckboxClick(todo)"
+        [checked]="!todo.active"
+      />
+      <label class="form-check-label" for="todo{{ i }}">Done</label>
+      <button mat-button type="button" (click)="openDialog(todo)">
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          fontIcon="edit"
+        >edit</mat-icon>
+      </button>
+      <button
+        mat-raised-button
+        color="warn"
+        style="margin-top: 5px"
+        (click)="onClick(todo)"
+      >
+        Delete
+      </button>
+    </div>
+  </mat-card>
+</div>

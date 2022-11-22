@@ -15,6 +15,10 @@ import { HomeComponent } from './Components/home/home.component';
 import { ParentComponentComponent } from './Components/parent-component/parent-component.component';
 import { ChildComponentComponent } from './Components/child-component/child-component.component';
 import { LoginComponent } from './Components/login/login.component';
+import { BodyComponent } from './Components/body/body.component';
+import { EditTodosComponent } from './Components/edit-todos/edit-todos.component';
+import { ListTodosComponent } from './Components/list-todos/list-todos.component';
+import { AddTodosComponent } from './Components/add-todos/add-todos.component';
 
 
 
@@ -29,7 +33,11 @@ import { LoginComponent } from './Components/login/login.component';
     HomeComponent,
     ParentComponentComponent,
     ChildComponentComponent,
-    LoginComponent
+    LoginComponent,
+    BodyComponent,
+    EditTodosComponent,
+    ListTodosComponent,
+    AddTodosComponent,
   ],
   imports: [
     BrowserModule,

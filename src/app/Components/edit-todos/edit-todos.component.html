@@ -1,0 +1,20 @@
+<form (ngSubmit)="update(data)">
+    <div class="input-box">
+      <mat-form-field class="example-full-width">
+        <mat-label>Title</mat-label>
+        <input type="text" matInput name="title" id="title" value={{data.title}} [(ngModel)]="etitle" />
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Description</mat-label>
+        <input matInput name="desc" id="desc" value={{data.desc}} [(ngModel)]="edesc"/>
+      </mat-form-field>
+    </div>
+    <button [matDialogClose]="data"
+      class="addbtn"
+      mat-raised-button
+      color="primary"
+      type="submit"
+    >
+      update
+    </button>
+  </form>

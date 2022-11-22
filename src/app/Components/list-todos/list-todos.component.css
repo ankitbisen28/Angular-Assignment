@@ -1,0 +1,15 @@
+.container {
+    width: 30%;
+    height: 50vh;
+    margin: auto;
+}
+
+.input-box {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.strike {
+    text-decoration: line-through;
+}
