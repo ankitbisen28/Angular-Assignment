@@ -3,12 +3,11 @@
     ><mat-card>
       <div class="mat-display-1">Parent Component</div>
       <div class="input-group input-group-lg">
-        <span class="mat-title">Parent value</span>
-        <mat-form-field class="example-full-width" floatLabel="always" appearance="outline">
-          <mat-label>Type Something</mat-label>
+        <mat-form-field class="text-field" floatLabel="auto" appearance="standard">
+          <mat-label>Parent Title</mat-label>
           <input #parentval matInput>
         </mat-form-field>
-        <button
+        <button style="margin-left: 1rem;"
           mat-raised-button
           (click)="getvalue(parentval.value)"
           color="primary"
@@ -16,7 +15,7 @@
           To Child
         </button>
       </div>
-      <p class="mat-subheading-2" [style]="">Result</p>
+      <p class="mat-subheading-2" [style]="">Result :</p>
       <p id="parent-result">
         {{ childValue }}
       </p>

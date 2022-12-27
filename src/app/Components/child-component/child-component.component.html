@@ -1,13 +1,18 @@
 <mat-card>
     <div class="mat-display-1">Child Component</div>
-  <div class="input-group input-group-lg">
-    <span class="mat-title">Child Value</span>
-    <mat-form-field class="example-full-width" floatLabel="always" appearance="outline">
-      <mat-label>Type Something</mat-label>
-      <input #childInput matInput>
-    </mat-form-field>
-    <button mat-raised-button color="warn" (click)="addNewItem(childInput.value)">To Parent</button>
-  </div>
-  <p>Result</p>
+    <div class="input-group input-group-lg">
+      <mat-form-field class="text-field" floatLabel="auto" appearance="standard">
+        <mat-label>Child Title</mat-label>
+        <input #childInput matInput>
+      </mat-form-field>
+      <button style="margin-left: 1rem;"
+        mat-raised-button
+        (click)="addNewItem(childInput.value)"
+        color="primary"
+      >
+        To Parent
+      </button>
+    </div>
+  <p>Result :</p>
   <p id="child-result">{{value}}</p>
 </mat-card>

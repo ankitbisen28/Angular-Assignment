@@ -2,7 +2,7 @@
     width: 50%;
     height: 100vh;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 .form {
     display: flex;
@@ -17,4 +17,8 @@
 
 .login {
     width: 20%;
+}
+
+.login-image {
+    margin-top: 3rem;
 }
